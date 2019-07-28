@@ -1,13 +1,15 @@
 // variables 
 
-const kittyUrl = './kitty.png';
-const puppyUrl = './puppy.png';
-const squrrelUrl = './squrrel.png';
-const chameleoUrl = './chameleo.png';
-const birdUrl = './bird.png';
-const pigletUrl = './piglet.png';
-const butterflyUrl = './butterfly.png';
-const fishUrl = './fish.png';
+const urls = {
+    kittyUrl : './kitty.png',
+    puppyUrl : './puppy.png',
+    squrrelUrl : './squrrel.png',
+    chameleoUrl : './chameleo.png',
+    birdUrl : './bird.png',
+    pigletUrl : './piglet.png',
+    butterflyUrl : './butterfly.png',
+    fishUrl : './fish.png',
+}
 
 
 const card1 = document.getElementById('card1');
@@ -38,7 +40,7 @@ let interval;
 // functions
 
 function dealCards() {
-    const cardsPool = [kittyUrl, kittyUrl, puppyUrl, puppyUrl, squrrelUrl, squrrelUrl, chameleoUrl, chameleoUrl, birdUrl, birdUrl, pigletUrl, pigletUrl, butterflyUrl, butterflyUrl, fishUrl, fishUrl];
+    const cardsPool = [urls.kittyUrl, urls.kittyUrl, urls.puppyUrl, urls.puppyUrl, urls.squrrelUrl, urls.squrrelUrl, urls.chameleoUrl, urls.chameleoUrl, urls.birdUrl, urls.birdUrl, urls.pigletUrl, urls.pigletUrl, urls.butterflyUrl, urls.butterflyUrl, urls.fishUrl, urls.fishUrl];
 
     for (i = 1; i < 17; i++) {
         let cardIndex = Math.floor(Math.random() * cardsPool.length);
@@ -82,6 +84,7 @@ function isOpen(item) {
 }
 
 function gameOver() {
+    clearInterval(interval);
     endTime = Date.now();
     let gameTime = Math.floor((endTime - startTime)/1000);
     globalTime.push(gameTime);
@@ -94,7 +97,7 @@ function gameOver() {
     document.getElementById('timer').innerHTML = gameTime;
     document.getElementById('best').innerHTML = `${bestTime} sec`;
     document.getElementById('average').innerHTML = `${averageTime} sec`;
-    clearInterval(interval);
+    
 }
 
 function gameRound() {
