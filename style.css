@@ -1,0 +1,140 @@
+/* general styles */
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    background-color: #a3e1ed;
+    text-align: center;
+}
+
+/* headers */
+
+h1 {
+    font-family: 'Bungee Inline', cursive;
+    padding: 40px 0 0 0;
+
+}
+h2, #start {
+    font-family: 'Permanent Marker', cursive;
+    margin: 20px 0;
+    color: #02687c
+}
+#start {
+    border: 2px solid #02687c;
+    border-radius: 10px;
+    background-color: lightgoldenrodyellow;
+    width: 100px;
+    font-size: 1.3em;
+    margin: 30px auto; 
+    padding: 5px;
+    cursor: pointer;
+}
+#start:hover {
+    border: 2px solid lightgoldenrodyellow;
+    background-color: #02687c;
+    color: lightgoldenrodyellow;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* score card */
+
+#timer {
+    font-size: 2em;
+    color: green !important;
+    border: 1px solid green;
+    border-radius: 10px;
+    width: 60px;
+    margin: 5px auto 10px auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+#score-card {
+    position: absolute;
+    background-color: lightgoldenrodyellow;
+    height: 74vh;
+    font-family: 'Bungee Inline', cursive;
+    padding-top: 26vh;
+    display: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#score-card p {
+    padding: 10px;
+}
+.seconds {
+    color: #02687c;
+}
+
+/* container */
+
+#container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+/* card */
+
+.card {
+    height: 150px;
+    width: 95px;
+}
+
+.card-back {
+    background-image: url('./back.png');
+    background-size: cover;
+    height: 150px;
+    width: 95px;
+    display: inline-block;
+    cursor: pointer;
+    margin: 3px;
+}
+#card1 {
+    visibility: hidden;
+}
+#card2 {
+    visibility: hidden;
+}
+#card3 {
+    visibility: hidden;
+}
+#card4 {
+    visibility: hidden;
+}
+#card5 {
+    visibility: hidden;
+}
+#card6 {
+    visibility: hidden;
+}
+#card7 {
+    visibility: hidden;
+}
+#card8 {
+    visibility: hidden;
+}
+#card9 {
+    visibility: hidden;
+}
+#card10 {
+    visibility: hidden;
+}
+#card11 {
+    visibility: hidden;
+}
+#card12 {
+    visibility: hidden;
+}
+#card13 {
+    visibility: hidden;
+}
+#card14 {
+    visibility: hidden;
+}
+#card15 {
+    visibility: hidden;
+}
+#card16 {
+    visibility: hidden;
+}
+
